@@ -4,7 +4,7 @@ This repository is used for practicing code collaboration using GitHub.
 
 ## Practice Goals
 
-Students is capable of:
+Students are capable of:
 1. Creating a branch corresponding feature task.
 2. Committing and pushing to GitHub.
 3. Creating a Pull Request.
