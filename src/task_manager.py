@@ -1,6 +1,8 @@
 import json
+import os
 
-DATA_FILE = "../data/tasks.json"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_FILE = os.path.join(BASE_DIR, "data", "tasks.json")
 
 def load_tasks():
     with open(DATA_FILE, "r") as file:
