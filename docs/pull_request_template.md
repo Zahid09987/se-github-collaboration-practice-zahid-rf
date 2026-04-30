@@ -18,7 +18,7 @@ For example:
 3. Choose menu [2] to add tasks
 
 ## Checklists
-- [] Code that has been run without errors.
-- [] Branch name corresponded to the rules.
-- [] Commit messages described.
-- [] PR must contain a minimum of 1 reviewer approval from team members.
+- [ ] Code that has been run without errors.
+- [ ] Branch name corresponded to the rules.
+- [ ] Commit messages described.
+- [ ] PR must contain a minimum of 1 reviewer approval from team members.

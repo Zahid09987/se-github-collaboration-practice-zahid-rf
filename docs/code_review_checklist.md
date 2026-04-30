@@ -3,20 +3,20 @@
 Use the following checklist when reviewing a member's PR.
 
 ## Functionality
-- [] The feature run as intended.
-- [] No errors when program run.
-- [] Output corresponded to test scenario.
+- [ ] The feature run as intended.
+- [ ] No errors when program run.
+- [ ] Output corresponded to test scenario.
 
 ## Code Quality
-- [] Variable name is readable.
-- [] Code structure is logical and easy to understand.
-- [] No redundant/duplicated codes.
-- [] Function has single responsibility
+- [ ] Variable name is readable.
+- [ ] Code structure is logical and easy to understand.
+- [ ] No redundant/duplicated codes.
+- [ ] Function has single responsibility
 
 ## Collaboration
-- [] Branch corresponds to the format.
-- [] Commit message is clear.
-- [] PR has full description.
+- [ ] Branch corresponds to the format.
+- [ ] Commit message is clear.
+- [ ] PR has full description.
 
 ## Samples of Good Reviewer Comments 
 
