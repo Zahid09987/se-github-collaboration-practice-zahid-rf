@@ -1,4 +1,4 @@
-from task_manager import show_tasks, add_tasks, update_status, delete_task, search_by_assignee
+from task_manager import show_tasks, add_task, update_status, delete_task, search_by_assignee
 
 def main():
     while True:
@@ -15,7 +15,7 @@ def main():
         if choice == "1":
             show_tasks()
         elif choice == "2":
-            add_tasks()
+            add_task()
         elif choice == "3":
             update_status()
         elif choice == "4":
