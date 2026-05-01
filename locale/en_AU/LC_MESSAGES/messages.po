@@ -1,0 +1,130 @@
+# English translations for Zahid package.
+# Copyright (C) 2026 THE Zahid'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Zahid package.
+# Zahid Rizky Fakhri <zahidrizkyfakhri@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Zahid 2005\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-01 06:22+0700\n"
+"PO-Revision-Date: 2026-05-01 06:41+0700\n"
+"Last-Translator: Zahid Rizky Fakhri <zahidrizkyfakhri@gmail.com>\n"
+"Language-Team: English (Australia)\n"
+"Language: en_AU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/main.py:6
+msgid ""
+"\n"
+"=== TO-DO LIST PROJECT ==="
+msgstr ""
+"\n"
+"=== TO-DO LIST PROJECT ==="
+
+#: src/main.py:7
+msgid "1. Show all tasks"
+msgstr "1. Show all tasks"
+
+#: src/main.py:8
+msgid "2. Add task"
+msgstr "2. Add task"
+
+#: src/main.py:9
+msgid "3. Change task status"
+msgstr "3. Change task status"
+
+#: src/main.py:10
+msgid "4. Remove task"
+msgstr "4. Remove task"
+
+#: src/main.py:11
+msgid "5. Search task by assignee"
+msgstr "5. Search task by assignee"
+
+#: src/main.py:12
+msgid "0. Quit"
+msgstr "0. Quit"
+
+#: src/main.py:14
+msgid "Select menu: "
+msgstr "Select menu: "
+
+#: src/main.py:27
+msgid "This is the end of the program."
+msgstr "This is the end of the program."
+
+#: src/main.py:30
+msgid "Invalid choice. Please try again."
+msgstr "Invalid choice. Please try again."
+
+#: src/task_manager.py:18
+msgid ""
+"\n"
+"Tasks List:"
+msgstr ""
+"\n"
+"Tasks List:"
+
+#: src/task_manager.py:26
+msgid "Task title: "
+msgstr "Task title: "
+
+#: src/task_manager.py:27
+msgid "Description: "
+msgstr "Description: "
+
+#: src/task_manager.py:28
+msgid "Priority (High, Medium, Low): "
+msgstr "Priority (High, Medium, Low): "
+
+#: src/task_manager.py:29
+msgid "Assignee: "
+msgstr "Assignee: "
+
+#: src/task_manager.py:43
+msgid "Task added successfully."
+msgstr "Task added successfully."
+
+#: src/task_manager.py:48 src/task_manager.py:63
+msgid "Enter task ID: "
+msgstr "Enter task ID: "
+
+#: src/task_manager.py:49
+msgid "New status (todo, in-progress, done): "
+msgstr "New status (todo, in-progress, done): "
+
+#: src/task_manager.py:55
+msgid "Task updated successfully."
+msgstr "Task updated successfully."
+
+#: src/task_manager.py:58
+msgid "Task not found!"
+msgstr "Task not found!"
+
+#: src/task_manager.py:68
+msgid "Task not found."
+msgstr "Task not found."
+
+#: src/task_manager.py:71
+msgid "Task deleted successfully."
+msgstr "Task deleted successfully."
+
+#: src/task_manager.py:76
+msgid "Enter assignee name: "
+msgstr "Enter assignee name: "
+
+#: src/task_manager.py:84
+msgid "No tasks found for this assignee."
+msgstr "No tasks found for this assignee."
+
+#: src/task_manager.py:86
+msgid ""
+"\n"
+"Search Results:"
+msgstr ""
+"\n"
+"Search Results:"

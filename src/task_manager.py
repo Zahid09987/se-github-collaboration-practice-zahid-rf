@@ -1,3 +1,4 @@
+from utils import _
 import json
 import os
 
@@ -14,7 +15,7 @@ def save_tasks(tasks):
 
 def show_tasks():
     tasks = load_tasks()
-    print("\nTasks List:")
+    print(_("\nTasks List:"))
     for task in tasks:
         print(f"{task['id']}. {task['title']} | Status: {task['status']} | PIC: {task['assignee']}")
 
@@ -22,10 +23,10 @@ def add_task():
     tasks = load_tasks()
 
     new_id = max(task["id"] for task in tasks) + 1
-    title = input("Task title: ")
-    description = input("Description: ")
-    priority = input("Priority (High, Medium, Low): ")
-    assignee = input("Assignee: ")
+    title = input(_("Task title: "))
+    description = input(_("Description: "))
+    priority = input(_("Priority (High, Medium, Low): "))
+    assignee = input(_("Assignee: "))
 
     new_task = {
         "id": new_id,
@@ -39,40 +40,40 @@ def add_task():
     tasks.append(new_task)
     save_tasks(tasks)
 
-    print("Task added successfully.")
+    print(_("Task added successfully."))
 
 def update_status():
     tasks = load_tasks()
 
-    task_id = int(input("Enter task ID: "))
-    new_status = input("New status (todo, in-progress, done): ")
+    task_id = int(input(_("Enter task ID: ")))
+    new_status = input(_("New status (todo, in-progress, done): "))
 
     for task in tasks:
         if task["id"] == task_id:
             task["status"] = new_status
             save_tasks(tasks)
-            print("Task updated successfully.")
+            print(_("Task updated successfully."))
             return
 
-    print("Task not found!")
+    print(_("Task not found!"))
 
 def delete_task():
     tasks = load_tasks()
 
-    task_id = int(input("Enter task ID: "))
+    task_id = int(input(_("Enter task ID: ")))
 
     new_tasks = [task for task in tasks if task["id"] != task_id]
 
     if len(new_tasks) == len(tasks):
-        print("Task not found.")
+        print(_("Task not found."))
     else:
         save_tasks(new_tasks)
-        print("Task deleted successfully.")
+        print(_("Task deleted successfully."))
 
 def search_by_assignee():
     tasks = load_tasks()
 
-    keyword = input("Enter assignee name: ").lower()
+    keyword = input(_("Enter assignee name: ")).lower()
 
     results = [
         task for task in tasks
@@ -80,8 +81,8 @@ def search_by_assignee():
     ]
 
     if not results:
-        print("No tasks found for this assignee.")
+        print(_("No tasks found for this assignee."))
     else:
-        print("\nSearch Results:")
+        print(_("\nSearch Results:"))
         for task in results:
             print(f"{task['id']}. {task['title']} | Status: {task['status']} | PIC: {task['assignee']}")

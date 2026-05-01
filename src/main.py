@@ -1,16 +1,17 @@
+from utils import _
 from task_manager import show_tasks, add_task, update_status, delete_task, search_by_assignee
 
 def main():
     while True:
-        print("\n=== TO-DO LIST PROJECT ===")
-        print("1. Show all tasks")
-        print("2. Add task")
-        print("3. Change task status")
-        print("4. Remove task")
-        print("5. Search task by assignee")
-        print("0. Quit")
+        print(_("\n=== TO-DO LIST PROJECT ==="))
+        print(_("1. Show all tasks"))
+        print(_("2. Add task"))
+        print(_("3. Change task status"))
+        print(_("4. Remove task"))
+        print(_("5. Search task by assignee"))
+        print(_("0. Quit"))
 
-        choice = input("Select menu: ")
+        choice = input(_("Select menu: "))
 
         if choice == "1":
             show_tasks()
@@ -23,10 +24,10 @@ def main():
         elif choice == "5":
             search_by_assignee()
         elif choice == "0":
-            print("This is the end of the program.")
+            print(_("This is the end of the program."))
             break
         else:
-            print("Invalid choice. Please try again.")
+            print(_("Invalid choice. Please try again."))
 
 if __name__ == "__main__":
     main()

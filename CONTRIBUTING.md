@@ -4,24 +4,24 @@
 
 Use branch name format:
 
-feature/feature-name-student-name
+`feature/feature-name-student-name`
 
 For example:
-- feature/add-task-rina
-- feature/delete-task-budi
-- feature/update-status-sari
+- `feature/add-task-rina`
+- `feature/delete-task-budi`
+- `feature/update-status-sari`
 
 ## Commit Message Rules
 
 Use format:
 
-type: short description
+`type: short description`
 
 For example:
-- feat: add task feature
-- fix: fix validation status
-- docs: update README
-- refactor: simplify task search function
+- `feat: add task feature`
+- `fix: fix validation status`
+- `docs: update README`
+- `refactor: simplify task search function`
 
 ## PR Rules
 
