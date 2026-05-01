@@ -35,3 +35,7 @@ Simple To-Do List app for managing software engineering project tasks.
 8. Fixing code if there are any comments.
 9. Repeat from step 7 and 8 until the pull request is approved.
 10. Once approved, sync the changes with the main branch.
+
+## Localization Progress
+
+[![Crowdin](https://badges.crowdin.net/swe-python-project/localized.svg)](https://crowdin.com/project/swe-python-project)
