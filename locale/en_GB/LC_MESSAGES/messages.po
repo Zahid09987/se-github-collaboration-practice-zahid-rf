@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: swe-python-project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-01 06:22+0700\n"
-"PO-Revision-Date: 2026-05-01 03:59\n"
+"POT-Creation-Date: 2026-05-03 10:58+0700\n"
+"PO-Revision-Date: 2026-05-03 04:29\n"
 "Last-Translator: \n"
 "Language-Team: English, United Kingdom\n"
 "Language: en_GB\n"
@@ -63,59 +63,87 @@ msgid "\n"
 "Tasks List:"
 msgstr ""
 
-#: src/task_manager.py:26
+#: src/task_manager.py:27
 msgid "Task title: "
 msgstr ""
 
-#: src/task_manager.py:27
+#: src/task_manager.py:29
+msgid "Title cannot be empty."
+msgstr ""
+
+#: src/task_manager.py:32
 msgid "Description: "
 msgstr ""
 
-#: src/task_manager.py:28
-msgid "Priority (High, Medium, Low): "
+#: src/task_manager.py:34
+msgid "Priority (low, medium, high): "
 msgstr ""
 
-#: src/task_manager.py:29
+#: src/task_manager.py:36
+msgid "Invalid priority."
+msgstr ""
+
+#: src/task_manager.py:39
 msgid "Assignee: "
 msgstr ""
 
-#: src/task_manager.py:43
+#: src/task_manager.py:41
+msgid "Assignee cannot be empty."
+msgstr ""
+
+#: src/task_manager.py:56
 msgid "Task added successfully."
 msgstr ""
 
-#: src/task_manager.py:48 src/task_manager.py:63
+#: src/task_manager.py:62 src/task_manager.py:88
 msgid "Enter task ID: "
 msgstr ""
 
-#: src/task_manager.py:49
-msgid "New status (todo, in-progress, done): "
-msgstr ""
-
-#: src/task_manager.py:55
-msgid "Task updated successfully."
-msgstr ""
-
-#: src/task_manager.py:58
-msgid "Task not found!"
+#: src/task_manager.py:64 src/task_manager.py:90
+msgid "Invalid input. ID must be a number."
 msgstr ""
 
 #: src/task_manager.py:68
-msgid "Task not found."
+msgid "New status (todo, in_progress, done): "
 msgstr ""
 
 #: src/task_manager.py:71
+msgid "Invalid status."
+msgstr ""
+
+#: src/task_manager.py:78
+msgid "Task updated successfully."
+msgstr ""
+
+#: src/task_manager.py:81
+msgid "Task not found!"
+msgstr ""
+
+#: src/task_manager.py:95
+msgid "Are you sure you want to delete this task? (y/n): "
+msgstr ""
+
+#: src/task_manager.py:100
 msgid "Task deleted successfully."
 msgstr ""
 
-#: src/task_manager.py:76
+#: src/task_manager.py:102
+msgid "Deletion cancelled."
+msgstr ""
+
+#: src/task_manager.py:105
+msgid "Task not found."
+msgstr ""
+
+#: src/task_manager.py:110
 msgid "Enter assignee name: "
 msgstr ""
 
-#: src/task_manager.py:84
+#: src/task_manager.py:118
 msgid "No tasks found for this assignee."
 msgstr ""
 
-#: src/task_manager.py:86
+#: src/task_manager.py:120
 msgid "\n"
 "Search Results:"
 msgstr ""
