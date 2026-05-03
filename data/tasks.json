@@ -3,17 +3,9 @@
         "id": 1,
         "title": "Creating app requirements",
         "description": "Creating functional and non-functional requirements",
-        "status": "todo",
+        "status": "done",
         "priority": "high",
         "assignee": "Rina"
-    },
-    {
-        "id": 2,
-        "title": "Creating UI design",
-        "description": "Creating wireframe UI",
-        "status": "in_progress",
-        "priority": "medium",
-        "assignee": "Budi"
     },
     {
         "id": 3,
@@ -30,5 +22,13 @@
         "status": "done",
         "priority": "low",
         "assignee": "Dika"
+    },
+    {
+        "id": 5,
+        "title": "0",
+        "description": "0",
+        "status": "todo",
+        "priority": "",
+        "assignee": "0"
     }
 ]
