@@ -23,10 +23,23 @@ def add_task():
     tasks = load_tasks()
 
     new_id = max(task["id"] for task in tasks) + 1
-    title = input(_("Task title: "))
-    description = input(_("Description: "))
-    priority = input(_("Priority (High, Medium, Low): "))
-    assignee = input(_("Assignee: "))
+
+    title = input(_("Task title: ")).strip()
+    if not title:
+        print(_("Title cannot be empty."))
+        return
+
+    description = input(_("Description: ")).strip()
+
+    priority = input(_("Priority (low, medium, high): ")).lower()
+    if priority not in ["low", "medium", "high"]:
+        print(_("Invalid priority."))
+        return
+
+    assignee = input(_("Assignee: ")).strip()
+    if not assignee:
+        print(_("Assignee cannot be empty."))
+        return
 
     new_task = {
         "id": new_id,
@@ -45,8 +58,18 @@ def add_task():
 def update_status():
     tasks = load_tasks()
 
-    task_id = int(input(_("Enter task ID: ")))
-    new_status = input(_("New status (todo, in-progress, done): "))
+    try:
+        task_id = int(input(_("Enter task ID: ")))
+    except ValueError:
+        print(_("Invalid input. ID must be a number."))
+        return
+
+    valid_status = ["todo", "in_progress", "done"]
+    new_status = input(_("New status (todo, in_progress, done): ")).lower()
+
+    if new_status not in valid_status:
+        print(_("Invalid status."))
+        return
 
     for task in tasks:
         if task["id"] == task_id:
@@ -57,18 +80,29 @@ def update_status():
 
     print(_("Task not found!"))
 
+# improve readability for delete task function
 def delete_task():
     tasks = load_tasks()
 
-    task_id = int(input(_("Enter task ID: ")))
+    try:
+        task_id = int(input(_("Enter task ID: ")))
+    except ValueError:
+        print(_("Invalid input. ID must be a number."))
+        return
 
-    new_tasks = [task for task in tasks if task["id"] != task_id]
+    for task in tasks:
+        if task["id"] == task_id:
+            confirm = input(_("Are you sure you want to delete this task? (y/n): ")).lower()
 
-    if len(new_tasks) == len(tasks):
-        print(_("Task not found."))
-    else:
-        save_tasks(new_tasks)
-        print(_("Task deleted successfully."))
+            if confirm == "y":
+                tasks.remove(task)
+                save_tasks(tasks)
+                print(_("Task deleted successfully."))
+            else:
+                print(_("Deletion cancelled."))
+            return
+
+    print(_("Task not found."))
 
 def search_by_assignee():
     tasks = load_tasks()
