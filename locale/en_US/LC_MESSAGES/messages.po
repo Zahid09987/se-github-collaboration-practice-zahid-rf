@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: swe-python-project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-03 10:58+0700\n"
-"PO-Revision-Date: 2026-05-03 04:29\n"
+"PO-Revision-Date: 2026-05-03 11:17\n"
 "Last-Translator: \n"
 "Language-Team: English, United States\n"
 "Language: en_US\n"
@@ -20,131 +20,134 @@ msgstr ""
 #: src/main.py:6
 msgid "\n"
 "=== TO-DO LIST PROJECT ==="
-msgstr ""
+msgstr "\n"
+"=== TO-DO LIST PROJECT ==="
 
 #: src/main.py:7
 msgid "1. Show all tasks"
-msgstr ""
+msgstr "1. Show all tasks"
 
 #: src/main.py:8
 msgid "2. Add task"
-msgstr ""
+msgstr "2. Add task"
 
 #: src/main.py:9
 msgid "3. Change task status"
-msgstr ""
+msgstr "3. Change task status"
 
 #: src/main.py:10
 msgid "4. Remove task"
-msgstr ""
+msgstr "4. Remove task"
 
 #: src/main.py:11
 msgid "5. Search task by assignee"
-msgstr ""
+msgstr "5. Search task by assignee"
 
 #: src/main.py:12
 msgid "0. Quit"
-msgstr ""
+msgstr "0. Quit"
 
 #: src/main.py:14
 msgid "Select menu: "
-msgstr ""
+msgstr "Select menu: "
 
 #: src/main.py:27
 msgid "This is the end of the program."
-msgstr ""
+msgstr "This is the end of the program."
 
 #: src/main.py:30
 msgid "Invalid choice. Please try again."
-msgstr ""
+msgstr "Invalid choice. Please try again."
 
 #: src/task_manager.py:18
 msgid "\n"
 "Tasks List:"
-msgstr ""
+msgstr "\n"
+"Tasks List:"
 
 #: src/task_manager.py:27
 msgid "Task title: "
-msgstr ""
+msgstr "Task title: "
 
 #: src/task_manager.py:29
 msgid "Title cannot be empty."
-msgstr ""
+msgstr "Title cannot be empty."
 
 #: src/task_manager.py:32
 msgid "Description: "
-msgstr ""
+msgstr "Description: "
 
 #: src/task_manager.py:34
 msgid "Priority (low, medium, high): "
-msgstr ""
+msgstr "Priority (low, medium, high): "
 
 #: src/task_manager.py:36
 msgid "Invalid priority."
-msgstr ""
+msgstr "Invalid priority."
 
 #: src/task_manager.py:39
 msgid "Assignee: "
-msgstr ""
+msgstr "Assignee: "
 
 #: src/task_manager.py:41
 msgid "Assignee cannot be empty."
-msgstr ""
+msgstr "Assignee cannot be empty."
 
 #: src/task_manager.py:56
 msgid "Task added successfully."
-msgstr ""
+msgstr "Task added successfully."
 
 #: src/task_manager.py:62 src/task_manager.py:88
 msgid "Enter task ID: "
-msgstr ""
+msgstr "Enter task ID: "
 
 #: src/task_manager.py:64 src/task_manager.py:90
 msgid "Invalid input. ID must be a number."
-msgstr ""
+msgstr "Invalid input. ID must be a number."
 
 #: src/task_manager.py:68
 msgid "New status (todo, in_progress, done): "
-msgstr ""
+msgstr "New status (todo, in_progress, done): "
 
 #: src/task_manager.py:71
 msgid "Invalid status."
-msgstr ""
+msgstr "Invalid status."
 
 #: src/task_manager.py:78
 msgid "Task updated successfully."
-msgstr ""
+msgstr "Task updated successfully."
 
 #: src/task_manager.py:81
 msgid "Task not found!"
-msgstr ""
+msgstr "Task not found!"
 
 #: src/task_manager.py:95
 msgid "Are you sure you want to delete this task? (y/n): "
-msgstr ""
+msgstr "Are you sure you want to delete this task? (y/n): "
 
 #: src/task_manager.py:100
 msgid "Task deleted successfully."
-msgstr ""
+msgstr "Task deleted successfully."
 
 #: src/task_manager.py:102
 msgid "Deletion cancelled."
-msgstr ""
+msgstr "Deletion cancelled."
 
 #: src/task_manager.py:105
 msgid "Task not found."
-msgstr ""
+msgstr "Task not found."
 
 #: src/task_manager.py:110
 msgid "Enter assignee name: "
-msgstr ""
+msgstr "Enter assignee name: "
 
 #: src/task_manager.py:118
 msgid "No tasks found for this assignee."
-msgstr ""
+msgstr "No tasks found for this assignee."
 
 #: src/task_manager.py:120
 msgid "\n"
 "Search Results:"
-msgstr ""
+msgstr "\n"
+"Search Results:"
 
