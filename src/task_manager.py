@@ -79,10 +79,12 @@ def search_by_assignee():
         task for task in tasks
         if keyword in task["assignee"].lower()
     ]
-
-    if not results:
-        print(_("No tasks found for this assignee."))
-    else:
-        print(_("\nSearch Results:"))
-        for task in results:
-            print(f"{task['id']}. {task['title']} | Status: {task['status']} | PIC: {task['assignee']}")
+    try:
+        if not results:
+            print(_("No tasks found for this assignee."))
+        else:
+            print(_("\nSearch Results:"))
+            for task in results:
+                print(f"{task['id']}. {task['title']} | Status: {task['status']} | PIC: {task['assignee']}")
+    except:
+        print("Error")
