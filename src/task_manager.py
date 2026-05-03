@@ -116,6 +116,10 @@ def search_by_assignee():
 
     if not results:
         print(_("No tasks found for this assignee."))
+        print("Try Again ?")
+        user_input = input(_("Yes/No: ")).lower()
+        if user_input == "yes":
+            search_by_assignee()
     else:
         print(_("\nSearch Results:"))
         for task in results:
