@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: swe-python-project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-03 10:58+0700\n"
-"PO-Revision-Date: 2026-05-01 03:59\n"
-"Last-Translator: Zahid Rizky Fakhri <zahidrizkyfakhri@gmail.com>\n"
+"PO-Revision-Date: 2026-05-03 04:29\n"
+"Last-Translator: \n"
 "Language-Team: English, United Kingdom\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
@@ -18,8 +18,7 @@ msgstr ""
 "X-Crowdin-File-ID: 63\n"
 
 #: src/main.py:6
-msgid ""
-"\n"
+msgid "\n"
 "=== TO-DO LIST PROJECT ==="
 msgstr ""
 
@@ -60,8 +59,7 @@ msgid "Invalid choice. Please try again."
 msgstr ""
 
 #: src/task_manager.py:18
-msgid ""
-"\n"
+msgid "\n"
 "Tasks List:"
 msgstr ""
 
@@ -146,7 +144,7 @@ msgid "No tasks found for this assignee."
 msgstr ""
 
 #: src/task_manager.py:120
-msgid ""
-"\n"
+msgid "\n"
 "Search Results:"
 msgstr ""
+
