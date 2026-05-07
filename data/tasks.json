@@ -22,13 +22,5 @@
         "status": "done",
         "priority": "low",
         "assignee": "Dika"
-    },
-    {
-        "id": 5,
-        "title": "0",
-        "description": "0",
-        "status": "todo",
-        "priority": "",
-        "assignee": "0"
     }
 ]
