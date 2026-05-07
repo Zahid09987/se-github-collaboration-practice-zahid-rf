@@ -27,7 +27,7 @@ def main():
             print(_("This is the end of the program."))
             break
         else:
-            print(_("Invalid. Please try again."))
+            print(_("Invalid Choise. Please try again."))
 
 if __name__ == "__main__":
     main()
