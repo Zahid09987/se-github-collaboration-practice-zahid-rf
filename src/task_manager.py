@@ -4,7 +4,8 @@ def get_all_tasks(tasks):
 
 def add_task(tasks, title, description, priority, assignee):
     new_id = 1 if len(tasks) == 0 else max(task["id"] for task in tasks) + 1
-
+    if title.strip() == "":
+        return "Error: Title wajib diisi"
     new_task = {
         "id": new_id,
         "title": title,
@@ -36,3 +37,16 @@ def search_task_by_assignee(tasks, keyword):
         task for task in tasks
         if keyword.lower() in task["assignee"].lower()
     ]
+
+def test_whitespace_title():
+
+    tasks = []
+
+    result = add_task(
+        tasks,
+        "   ",
+        "high",
+        "Rina"
+    )
+
+    assert result == "Error: Title wajib diisi"
