@@ -110,3 +110,29 @@ def test_whitespace_title():
     )
 
     assert result == "Error: Title wajib diisi"
+
+def test_invalid_priority():
+
+    tasks = []
+
+    result = add_task(
+        tasks,
+        "Task Baru",
+        "Deskripsi",
+        "urgent",
+        "Rina"
+    )
+
+    assert result == "Error: Priority tidak valid"
+
+def test_invalid_status():
+
+    tasks = sample_tasks()
+
+    result = update_task_status(
+        tasks,
+        1,
+        "finish"
+    )
+
+    assert result == "Error: Status tidak valid"

@@ -6,6 +6,9 @@ def add_task(tasks, title, description, priority, assignee):
     new_id = 1 if len(tasks) == 0 else max(task["id"] for task in tasks) + 1
     if title.strip() == "":
         return "Error: Title wajib diisi"
+
+    if priority not in ["low", "medium", "high"]:
+        return "Error: Priority tidak valid"
     new_task = {
         "id": new_id,
         "title": title,
@@ -14,12 +17,15 @@ def add_task(tasks, title, description, priority, assignee):
         "priority": priority,
         "assignee": assignee
     }
-
     tasks.append(new_task)
     return tasks
 
 
 def update_task_status(tasks, task_id, new_status):
+
+    if new_status not in ["todo", "in_progress", "done"]:
+        return "Error: Status tidak valid"
+
     for task in tasks:
         if task["id"] == task_id:
             task["status"] = new_status
@@ -38,15 +44,3 @@ def search_task_by_assignee(tasks, keyword):
         if keyword.lower() in task["assignee"].lower()
     ]
 
-def test_whitespace_title():
-
-    tasks = []
-
-    result = add_task(
-        tasks,
-        "   ",
-        "high",
-        "Rina"
-    )
-
-    assert result == "Error: Title wajib diisi"
