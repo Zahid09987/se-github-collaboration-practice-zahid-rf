@@ -1,0 +1,3 @@
+# Kesimpulan
+
+Seluruh requirement utama pada aplikasi Task Manager berhasil diuji menggunakan automated testing dengan pytest. Pengujian mencakup positive testing, negative testing, dan edge case testing untuk memastikan sistem berjalan sesuai requirement dan stabil terhadap invalid input. GitHub Actions berhasil menjalankan automation testing pipeline secara otomatis saat push dilakukan ke repository. Defect yang ditemukan selama proses testing telah diperbaiki sehingga kualitas software menjadi lebih reliable dan siap digunakan untuk skala praktikum.
